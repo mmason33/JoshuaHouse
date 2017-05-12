@@ -1,0 +1,19 @@
+.page-id-11 {
+  background: linear-gradient(to right,#abc937, #fff, #81816d);
+  background-size: 600% 600%;
+  animation: home 20s ease infinite;
+  font-family: 'Source Sans Pro', sans-serif;
+  h2 {
+    color: #81816d !important;
+  }
+  .coming-soon {
+    position: relative;
+    top: 200%;
+  }
+}
+
+@keyframes home {
+  0%{background-position:0% 77%}
+  50%{background-position:100% 24%}
+  100%{background-position:0% 77%}
+}
