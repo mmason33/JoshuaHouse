@@ -7,6 +7,10 @@ if ( have_rows('builder') ):
             require('textArea.php');
           endif;
 
+          if ( get_row_layout() == 'page_pile'):
+            require('pagePile.php');
+          endif;
+
     endwhile;
 else:
 

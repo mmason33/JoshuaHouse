@@ -95,30 +95,13 @@
               buttons: true
             });
 
-            $(window).mousemove(function(){
-              var height = $(window).scrollTop();
-              // if(height < 200){
-              //   $('body').css('overflow', 'hidden');
-              // } else {
-              //   $('body').css('overflow', 'scroll');
-              // }
-              console.log(height);
-            });
-
-            $(window).scroll(function(){
-              var top = $(window).scrollTop();
-              if(top === 50) {
-                // ( '#my-slider' ).sliderPro( 'nextSlide' );
-              }
-            });
-
             $('#pagepiling').pagepiling({
                 menu: null,
-                direction: 'vertical',
+                direction: 'horizontal',
                 verticalCentered: true,
                 sectionsColor: [],
                 anchors: [],
-                scrollingSpeed: 700,
+                scrollingSpeed: 1000,
                 easing: 'swing',
                 loopBottom: false,
                 loopTop: false,

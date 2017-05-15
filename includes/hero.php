@@ -10,7 +10,7 @@ $sliderImages = get_field('slider_images');
 $sliderHeadlines = get_field('slider_headlines');
 $sliderExplodeHeadlines = explode(',', $sliderHeadlines);
 ?>
-<?php if( $sliderCheck == false && $sliderPro == false): ?>
+<?php if(!empty($heroImage) && $sliderPro == false): ?>
 <section class="hero" <?php echo $heroImage; ?>>
   <div class="container">
     <div class="row">
@@ -23,7 +23,7 @@ $sliderExplodeHeadlines = explode(',', $sliderHeadlines);
   </div>
 </section>
 
-<?php else: ?>
+<?php elseif( $sliderPro == true): ?>
 
   <section class="hero">
     <div id="my-slider" class="slider-pro">
@@ -42,5 +42,6 @@ $sliderExplodeHeadlines = explode(',', $sliderHeadlines);
       </div>
     </div>
   </section>
+<?php else: ?>
 
 <?php endif; ?>

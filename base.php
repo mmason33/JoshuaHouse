@@ -19,7 +19,6 @@ use Roots\Sage\Wrapper;
       get_template_part('templates/header');
     ?>
     <div id="pagepiling">
-      <div class="section"><?php get_template_part('includes/hero'); ?></div>
     	<div class="section" style="background:url('/wp-content/uploads/2017/05/pexels-photo-276245.jpeg') no-repeat center center;background-size:cover;">Some section</div>
     	<div class="section" style="background:url('/wp-content/uploads/2017/05/pexels-photo-198697-1.jpeg') no-repeat center center;background-size:cover;">Some section</div>
     	<div class="section" style="background:url('/wp-content/uploads/2017/05/pexels-photo-404857.jpeg') no-repeat center center;background-size:cover;">Some section</div>
