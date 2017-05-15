@@ -5,12 +5,12 @@ $heroPosition = get_field('hero_position');
 $heroParallax = get_field('hero_parallax');
 $centerContent = (get_field('center_content') == true ? ' text-center' : '' );
 $heroContent = get_field('hero_content');
-$sliderCheck = get_field('slider_check');
+$sliderPro = get_field('slider_pro');
 $sliderImages = get_field('slider_images');
 $sliderHeadlines = get_field('slider_headlines');
 $sliderExplodeHeadlines = explode(',', $sliderHeadlines);
 ?>
-<?php if( $sliderCheck == false): ?>
+<?php if( $sliderCheck == false && $sliderPro == false): ?>
 <section class="hero" <?php echo $heroImage; ?>>
   <div class="container">
     <div class="row">
@@ -26,18 +26,21 @@ $sliderExplodeHeadlines = explode(',', $sliderHeadlines);
 <?php else: ?>
 
   <section class="hero">
-    <div class="hero--slider--wrap">
-      <ul class="hero--slider">
+    <div id="my-slider" class="slider-pro">
+      <div class="sp-slides">
       <?php $i = 0; ?>
       <?php foreach ($sliderImages as $sliderImage): ?>
-            <li class="slide">
-              <div class="slide--headline"><?php echo $sliderExplodeHeadlines[$i]; ?></div>
-              <span class="slide--image" style="background:url(<?php echo $sliderImage['url']; ?>);"></span>
-            </li>
+            <div class="sp-slide">
+              <img class="sp-image" src="<?php echo $sliderImage['url']; ?>">
+              <?php if ($sliderExplodeHeadlines): ?>
+                    <h2 class="sp-layer sp-black sp-padding slider--headline" data-position="centerCenter" data-show-transition="up" data-show-delay="600" data-hide-transition="right" data-show-duration="1000"><?php echo $sliderExplodeHeadlines[$i]; ?></h2>
+              <?php endif; ?>
+            </div>
       <?php $i++; ?>
       <?php endforeach; ?>
 
-      </ul>
+      </div>
     </div>
   </section>
+
 <?php endif; ?>

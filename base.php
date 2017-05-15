@@ -17,20 +17,14 @@ use Roots\Sage\Wrapper;
     <?php
       do_action('get_header');
       get_template_part('templates/header');
-      get_template_part('includes/hero');
     ?>
-    <div class="wrap container" role="document">
-      <div class="content row">
-        <main class="main">
-          <?php include Wrapper\template_path(); ?>
-        </main><!-- /.main -->
-        <?php if (Setup\display_sidebar()) : ?>
-          <aside class="sidebar">
-            <?php include Wrapper\sidebar_path(); ?>
-          </aside><!-- /.sidebar -->
-        <?php endif; ?>
-      </div><!-- /.content -->
-    </div><!-- /.wrap -->
+    <div id="pagepiling">
+      <div class="section"><?php get_template_part('includes/hero'); ?></div>
+    	<div class="section" style="background:url('/wp-content/uploads/2017/05/pexels-photo-276245.jpeg') no-repeat center center;background-size:cover;">Some section</div>
+    	<div class="section" style="background:url('/wp-content/uploads/2017/05/pexels-photo-198697-1.jpeg') no-repeat center center;background-size:cover;">Some section</div>
+    	<div class="section" style="background:url('/wp-content/uploads/2017/05/pexels-photo-404857.jpeg') no-repeat center center;background-size:cover;">Some section</div>
+    	<div class="section" style="background:url('/wp-content/uploads/2017/05/pexels-photo-408951.jpeg') no-repeat center center;background-size:cover;">Some section</div>
+    </div>
     <?php
       do_action('get_footer');
       get_template_part('templates/footer');

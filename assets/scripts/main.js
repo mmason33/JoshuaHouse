@@ -25,7 +25,7 @@
                 item: 1,
                 autoWidth: false,
                 slideMove: 1, // slidemove will be 1 if loop is true
-                slideMargin: 10,
+                slideMargin: 0,
 
                 addClass: '',
                 mode: "slide",
@@ -33,7 +33,7 @@
                 cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
                 easing: 'linear', //'for jquery animation',////
 
-                speed: 400, //ms'
+                speed: 1000, //ms'
                 auto: false,
                 pauseOnHover: false,
                 loop: false,
@@ -73,6 +73,75 @@
                 onBeforeNextSlide: function (el) {},
                 onBeforePrevSlide: function (el) {}
             });
+
+            AOS.init({
+              offset: 200,
+              duration: 600,
+              easing: 'ease-in-sine',
+              delay: 100,
+            });
+
+            $( '#my-slider' ).sliderPro({
+              width: 1920,
+              height: $(window).height(),
+              autoplay: false,
+              loop: false,
+              slideAnimationDuration: 1500,
+              orientation: 'horizontal',
+              fade: true,
+              fadeDuration: 1000,
+              fadeArrows: true,
+              arrows: true,
+              buttons: true
+            });
+
+            $(window).mousemove(function(){
+              var height = $(window).scrollTop();
+              // if(height < 200){
+              //   $('body').css('overflow', 'hidden');
+              // } else {
+              //   $('body').css('overflow', 'scroll');
+              // }
+              console.log(height);
+            });
+
+            $(window).scroll(function(){
+              var top = $(window).scrollTop();
+              if(top === 50) {
+                // ( '#my-slider' ).sliderPro( 'nextSlide' );
+              }
+            });
+
+            $('#pagepiling').pagepiling({
+                menu: null,
+                direction: 'vertical',
+                verticalCentered: true,
+                sectionsColor: [],
+                anchors: [],
+                scrollingSpeed: 700,
+                easing: 'swing',
+                loopBottom: false,
+                loopTop: false,
+                css3: true,
+                navigation: {
+                    'textColor': '#000',
+                    'bulletsColor': '#000',
+                    'position': 'right',
+                    'tooltips': ['section1', 'section2', 'section3', 'section4']
+                },
+                normalScrollElements: null,
+                normalScrollElementTouchThreshold: 5,
+                touchSensitivity: 5,
+                keyboardScrolling: true,
+                sectionSelector: '.section',
+                animateAnchor: false,
+
+                //events
+                onLeave: function(index, nextIndex, direction){},
+                afterLoad: function(anchorLink, index){},
+                afterRender: function(){},
+            });
+
         });
 
       },
