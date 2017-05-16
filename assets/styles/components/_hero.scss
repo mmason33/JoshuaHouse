@@ -1,19 +1,26 @@
-.hero--slider--wrap {
-  width: 100%;
+.hero--slider {
+  padding-top: 80px;
 }
 
-.slide--image {
-  display: block;
-  background-size: cover !important;
-  height: 500px;
-  width: 100%;
+.slider--headline {
+  font-size: 4rem !important;
 }
 
-// .slide.active {
-//   .slide--headline {
-//     position: absolute;
-//     top: 50%;
-//     left: 0;
-//     color: #fff;
-//   }
-// }
+.sp-buttons {
+  padding: 0 !important;
+  top: -30px;
+}
+
+.sp-button {
+  border-radius: 0 !important;
+  width: 25px !important;
+  border-color: #abc937;
+}
+
+.sp-selected-button {
+  background-color: #abc937;
+}
+
+.sp-grab, .sp-grabbing {
+  cursor: default !important;
+}
