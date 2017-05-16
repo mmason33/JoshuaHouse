@@ -34,7 +34,11 @@
               fadeArrows: true,
               arrows: true,
               buttons: true
-          });            
+          });
+
+          $(window).scroll(function(){
+            console.log($(window).scrollTop());
+          });
 
         });
 
