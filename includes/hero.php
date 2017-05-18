@@ -5,27 +5,43 @@ $heroPosition = get_field('hero_position');
 $heroParallax = get_field('hero_parallax');
 $centerContent = (get_field('center_content') == true ? ' text-center' : '' );
 $heroContent = get_field('hero_content');
+$pagePile = get_field('page_pile');
 $sliderPro = get_field('slider_pro');
 $sliderImages = get_field('slider_images');
 $sliderHeadlines = get_field('slider_headlines');
 $sliderExplodeHeadlines = explode(',', $sliderHeadlines);
 ?>
 <?php if(!empty($heroImage) && $sliderPro == false): ?>
-<section class="hero" <?php echo $heroImage; ?>>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-md-12<?php echo $centerContent; ?>">
-        <section class="hero--content">
-          <?php echo $heroContent; ?>
-        </section>
+  <?php if($pagePile == true): ?>
+    <div class="section" <?php echo $heroImage; ?>>
+  <?php endif; ?>
+  <?php if($pagePile == false): ?>
+    <section class="hero hero--image" <?php echo $heroImage; ?>>
+  <?php else: ?>
+    <section class="hero">
+  <?php endif; ?>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-12<?php echo $centerContent; ?>">
+            <?php if($heroContent): ?>
+              <section class="hero--content">
+                <?php echo $heroContent; ?>
+              </section>
+            <?php endif; ?>
+          </div>
+        </div>
       </div>
+    </section>
+  <?php if($pagePile == true): ?>
     </div>
-  </div>
-</section>
+  <?php endif; ?>
 
-<?php elseif( empty($heroImage) && $sliderPro == true): ?>
+<?php elseif($sliderPro == true): ?>
 
-  <section class="hero">
+<?php if($pagePile == true): ?>
+  <div class="section">
+<?php endif; ?>
+  <section class="hero hero--slider">
     <div id="my-slider" class="slider-pro">
       <div class="sp-slides">
       <?php $i = 0; ?>
@@ -42,6 +58,8 @@ $sliderExplodeHeadlines = explode(',', $sliderHeadlines);
       </div>
     </div>
   </section>
-<?php else: ?>
+<?php if($pagePile == true): ?>
+  </div>
+<?php endif; ?>
 
 <?php endif; ?>
