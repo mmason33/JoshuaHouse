@@ -52,3 +52,22 @@
 .sp-grab, .sp-grabbing {
   cursor: default !important;
 }
+
+#pp-nav {
+  li {
+    height: 48px;
+  }
+  span {
+    border-radius: 0;
+    height: 50px;
+    width: 10px;
+  }
+}
+
+.sp-horizontal .sp-next-arrow {
+  right: 80px;
+}
+
+.sp-horizontal .sp-previous-arrow {
+  left: 80px;
+}

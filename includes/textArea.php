@@ -2,7 +2,7 @@
 
 $textBox = get_sub_field('text_box');
 $pagePile = get_sub_field('page_pile');
-$fullWidth = (get_sub_field('full_width') == false ? 'container' : 'container-fluid');
+$fullWidth = (get_sub_field('full_width') == false ? 'container' : 'container-fluid wrapper');
 $bgImage = (get_sub_field('bg_image') != '' ? "style='background:url(".get_field('bg_image').")center center no-repeat;background-size:cover;'" : '');
 $bgColor = (get_sub_field('bg_color') != '' ? 'style="background-color:'.get_sub_field('bg_color').'";' : '' );
 $scrollable = (get_sub_field('scrollable') == true ? ' pp-scrollable' : '');
