@@ -16,21 +16,17 @@ use Roots\Sage\Wrapper;
     <![endif]-->
     <?php do_action('get_header'); ?>
     <?php get_template_part('templates/header'); ?>
-  <div id="pagepiling">
+    <?php if(!is_page(11)): ?>
+          <div id="pagepiling">
+    <?php endif; ?>
     <?php  get_template_part('includes/hero'); ?>
-    <!-- <div class="wrap container" role="document">
-      <div class="content row">
-        <main class="main"> -->
           <?php include Wrapper\template_path(); ?>
-        <!-- </main> -->
         <?php if (Setup\display_sidebar()) : ?>
-          <!-- <aside class="sidebar"> -->
             <?php include Wrapper\sidebar_path(); ?>
-          <!-- </aside> -->
         <?php endif; ?>
-      <!-- </div>
-    </div> -->
-  </div>
+    <?php if(!is_page(11)): ?>
+      </div>
+    <?php endif; ?>
     <?php
       do_action('get_footer');
       get_template_part('templates/footer');

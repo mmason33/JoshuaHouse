@@ -19,7 +19,7 @@
 
 .header {
   background: rgba(0,0,0,0.95); /*rgba(1,33,68,1);*/
-  padding: 1em .75em;
+  padding: 1.5em .75em;
   outline: none;
   box-align: stretch;
   -moz-align-items: stretch;
@@ -45,7 +45,7 @@
   justify-content: flex-start;
   -ms-flex-pack: start;
   z-index: 7;
-  box-shadow: 0px 3px 7px #6b6b6b;
+  box-shadow: 0px 3px 7px #000;
   line-height: 1.5em;
   // margin-top: 25px; RETHINKING THE NAV-TOP SECTION - THIS WAS MARGIN FOR PLACEMENT OF #NAV-TOP - SEE HEADER - 3/30
   .nav-wrap{
@@ -82,7 +82,7 @@
     font-family: FontAwesome;
     font-size: 1.5rem;
     content: "\f107";
-    color: #ef6f00;
+    color: #abc937;
     position: absolute;
     top: 0em;
     right: -1.35rem;
@@ -173,7 +173,7 @@ a#nav-icon {
     font-size: 97%;
     float: left;
     position: relative;
-    margin-right: 3rem;
+    margin-right: 6rem;
     a{
       font-weight: 400;
       color: #696969;
@@ -183,10 +183,12 @@ a#nav-icon {
       li{
         font-size: 90%;
         transition: ease all 0.3s;
+        position: relative;
+        left: -42%;
         &:hover{
-          background: #2777B1;
+          background: #abc937;
           a{
-            color: #e3e3e3;
+            color: #000;
           }
         }
         a{
@@ -214,7 +216,7 @@ a#nav-icon {
 .menu.dropdown{
   ul.sub-menu {
     position: absolute;
-    top: .65rem;
+    top: 1.5rem;
     left: -999em;
     float: left;
     z-index: 99999;
@@ -227,6 +229,7 @@ a#nav-icon {
     a{
       height: auto;
       width: 19.5rem;
+      text-align: center;
     }
     ul{
       left: -999em;
@@ -234,24 +237,26 @@ a#nav-icon {
     }
     li{
       margin: 0;
-      background: #e3e3e3;
+      background: #000;
       width: 100%;
       box-shadow: 4px 4px 5px rgba(0,0,0,.6);
-      border-bottom:1px solid grey;
-      &:first-child{
-        border-top: 2px solid #ef6f00;
-        //padding-top: .75em;
-      }
-      &:last-child{
-        padding-right: .75em!important;
-        border: none;
-        //padding-bottom: .75em;
-      }
+      // border-bottom:1px solid grey;
+      border-top: 2px solid #abc937;
+      // &:first-child{
+      //   border-top: 2px solid #81816d;
+      //   padding-top: .75em;
+      // }
+      // &:last-child{
+      //   padding-right: .75em!important;
+      //   border: none;
+      //   //padding-bottom: .75em;
+      // }
       a{
         padding: .75em;
         color: #595959;
         &:hover{
-          color: #ef6f00;
+          color: #abc937;
+          padding: 1em;
         }
       }
     }
@@ -269,6 +274,10 @@ a#nav-icon {
     z-index: 1;
     transform: translateY(0%);
     transition-delay: 0s, 0s, 0.3s;
+    display: inline-flex;
+    li {
+      margin-right: 0 !important;
+    }
 }
 
 .menu-toggle,.menu a {
@@ -337,7 +346,7 @@ a#nav-icon {
           height: 3px;
           width: 35px;
           top: 0;
-          background: #ef6f00;
+          background: #abc937;
           border-radius: 1px;
           cursor: pointer;
           transition: all .5s ease-in-out;
