@@ -22,6 +22,13 @@
 
         $(document).ready(function() {
 
+          AOS.init({
+            offset: 200,
+            duration: 600,
+            easing: 'ease-in-sine',
+            delay: 100,
+          });
+
           $( '#my-slider' ).sliderPro({
               width: 1920,
               height: $(window).height(),
@@ -43,7 +50,7 @@
 
           $('#pagepiling').pagepiling({
         	    menu: null,
-                direction: 'vertical',
+                direction: 'horizontal',
                 verticalCentered: true,
                 sectionsColor: [],
                 anchors: [],

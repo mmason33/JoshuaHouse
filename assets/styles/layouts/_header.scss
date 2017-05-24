@@ -53,7 +53,7 @@
     position: relative;
     padding: 0;
     #nav-brand{
-      background: url('/wp-content/uploads/2017/05/joshua-house-logo.png') top no-repeat;
+      background: url('/wp-content/uploads/2017/05/j-house-logo-big-grey.png') top no-repeat;
       background-size: contain;
       display: block;
       position: absolute;
@@ -84,7 +84,7 @@
     content: "\f107";
     color: #abc937;
     position: absolute;
-    top: 0em;
+    top: .15rem;
     right: -1.35rem;
   }
 }
@@ -173,10 +173,10 @@ a#nav-icon {
     font-size: 97%;
     float: left;
     position: relative;
-    margin-right: 6rem;
+    margin-right: 4rem;
     a{
       font-weight: 400;
-      color: #696969;
+      color: #d1d1d1;
       text-decoration: none;
     }
     ul.sub-menu{
@@ -184,7 +184,6 @@ a#nav-icon {
         font-size: 90%;
         transition: ease all 0.3s;
         position: relative;
-        left: -42%;
         &:hover{
           background: #abc937;
           a{
@@ -228,8 +227,12 @@ a#nav-icon {
     visibility: hidden;
     a{
       height: auto;
-      width: 19.5rem;
-      text-align: center;
+      width: 13.5rem;
+      color: #d1d1d1 !important;
+      padding: 1.25rem;
+      &:hover {
+        color: #000 !important;
+      }
     }
     ul{
       left: -999em;
@@ -241,23 +244,14 @@ a#nav-icon {
       width: 100%;
       box-shadow: 4px 4px 5px rgba(0,0,0,.6);
       // border-bottom:1px solid grey;
-      border-top: 2px solid #abc937;
-      // &:first-child{
-      //   border-top: 2px solid #81816d;
-      //   padding-top: .75em;
-      // }
-      // &:last-child{
-      //   padding-right: .75em!important;
-      //   border: none;
-      //   //padding-bottom: .75em;
-      // }
-      a{
-        padding: .75em;
-        color: #595959;
-        &:hover{
-          color: #abc937;
-          padding: 1em;
-        }
+      &:first-child{
+        border-top: 2px solid #abc937;
+        // padding-top: .75em;
+      }
+      &:last-child{
+        padding-right: .75em!important;
+        border: none;
+        //padding-bottom: .75em;
       }
     }
   }
@@ -274,7 +268,7 @@ a#nav-icon {
     z-index: 1;
     transform: translateY(0%);
     transition-delay: 0s, 0s, 0.3s;
-    display: inline-flex;
+    // display: inline-flex;
     li {
       margin-right: 0 !important;
     }

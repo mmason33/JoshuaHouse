@@ -39,3 +39,30 @@ p {
   font-size: 1.8rem;
   line-height: 3rem;
 }
+
+//break
+
+ul {
+  list-style: none;
+  li {
+    line-height: 1.5 !important;
+  }
+}
+
+h2.display-1 {
+  background: #000 !important;
+  color: #abc937 !important;
+  padding: 1rem 0 !important;
+}
+
+.triple-images {
+  padding: 2rem .5rem 0;
+}
+
+body.admissions {
+  .section:nth-of-type(3) {
+    h2.display-1 {
+      color: #e6e6e6 !important;
+    }
+  }
+}
