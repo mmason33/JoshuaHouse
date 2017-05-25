@@ -62,8 +62,7 @@
                 navigation: {
                     'textColor': '#000',
                     'bulletsColor': '#000',
-                    'position': 'right',
-                    'tooltips': ['section1', 'section2', 'section3', 'section4']
+                    'position': 'right'
                 },
                	normalScrollElements: null,
                 normalScrollElementTouchThreshold: 5,

@@ -11,16 +11,20 @@ body {
   font-size: 1.6rem;
 }
 
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 300;
+}
+
 h1 {
-  font-size: 4.5rem;
+  font-size: 5.5rem;
 }
 
 h2 {
-  font-size:3.5rem;
+  font-size:4.5rem;
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 h4 {
@@ -49,15 +53,12 @@ ul {
   }
 }
 
-h2.display-1 {
-  background: #000 !important;
-  color: #abc937 !important;
-  padding: 1rem 0 !important;
-}
-
-.triple-images {
-  padding: 2rem .5rem 0;
-}
+// h2.display-1 {
+//   background: #000 !important;
+//   color: #abc937 !important;
+//   margin-bottom: 2rem !important;
+//   padding: 1.5rem 0 !important;
+// }
 
 body.admissions {
   .section:nth-of-type(3) {
@@ -65,4 +66,27 @@ body.admissions {
       color: #e6e6e6 !important;
     }
   }
+  .backdrop {
+    background: rgba(0,0,0,.85);
+    p, h1,h2,h3,h4,h5,h6 {
+      color: #fff;
+      text-shadow: 1px 1px 1px #000;
+    }
+  }
+}
+
+.icons-wrap {
+  padding: 4rem 0;
+}
+
+
+.hero, .textArea {
+  .display-1 {
+    color: #fff !important;
+    text-shadow: 1px 1px 1px #000;
+  }
+}
+
+.section.pp-scrollable .textArea--box {
+    margin: 10rem 0 0 0;
 }
