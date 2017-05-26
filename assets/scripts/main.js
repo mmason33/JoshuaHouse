@@ -20,7 +20,19 @@
       init: function() {
         // JavaScript to be fired on all pages
 
+        $('body').bind('mousewheel', function(){
+          console.log('mousewheel');
+          console.log(document.querySelectorAll('.fadeIn'));
+          var fadeClass = document.querySelector('.fadeIn');
+          for(var i = 0; i < fadeClass.length; i++ ) {
+            console.log(i);
+          }
+
+        });
+
         $(document).ready(function() {
+
+          console.log(document.querySelectorAll('.section.active'));
 
           AOS.init({
             offset: 200,
@@ -28,6 +40,7 @@
             easing: 'ease-in-sine',
             delay: 100,
           });
+
 
           $( '#my-slider' ).sliderPro({
               width: 1920,
@@ -43,9 +56,6 @@
               buttons: true
           });
 
-          $(window).scroll(function(){
-            console.log($(window).scrollTop());
-          });
 
 
           $('#pagepiling').pagepiling({
