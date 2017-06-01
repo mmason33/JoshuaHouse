@@ -18,8 +18,13 @@
 }
 
 .header {
+<<<<<<< HEAD
   background: rgba(255,255,255,0.75); /*rgba(1,33,68,1);*/
   padding: 1.75em .75em;
+=======
+  background: rgba(0,0,0,0.95); /*rgba(1,33,68,1);*/
+  padding: 1.5em .75em;
+>>>>>>> cd9de5b3fe03c4e48e45adcf21185471c4fd20e2
   outline: none;
   box-align: stretch;
   -moz-align-items: stretch;
@@ -44,8 +49,13 @@
   -o-justify-content: flex-start;
   justify-content: flex-start;
   -ms-flex-pack: start;
+<<<<<<< HEAD
   z-index: 6;
   box-shadow: 0px 3px 7px #6b6b6b;
+=======
+  z-index: 7;
+  box-shadow: 0px 3px 7px #000;
+>>>>>>> cd9de5b3fe03c4e48e45adcf21185471c4fd20e2
   line-height: 1.5em;
   // margin-top: 25px; RETHINKING THE NAV-TOP SECTION - THIS WAS MARGIN FOR PLACEMENT OF #NAV-TOP - SEE HEADER - 3/30
   .nav-wrap{
@@ -53,14 +63,14 @@
     position: relative;
     padding: 0;
     #nav-brand{
-      background: url('/wp-content/uploads/2017/05/joshua-house-logo.png') top no-repeat;
+      background: url('/wp-content/uploads/2017/05/j-house-logo-big-grey.png') top no-repeat;
       background-size: contain;
       display: block;
       position: absolute;
       top: 100%;//changed
       left: 0;
       height: 50px;
-      width: 330px;//changed
+      width: 265px;//changed
       margin: 0;
       overflow: hidden;
       text-indent: 110%;
@@ -82,9 +92,9 @@
     font-family: FontAwesome;
     font-size: 1.5rem;
     content: "\f107";
-    color: #ef6f00;
+    color: #abc937;
     position: absolute;
-    top: 0em;
+    top: .15rem;
     right: -1.35rem;
   }
 }
@@ -173,20 +183,21 @@ a#nav-icon {
     font-size: 97%;
     float: left;
     position: relative;
-    margin-right: 3rem;
+    margin-right: 4rem;
     a{
       font-weight: 400;
-      color: #696969;
+      color: #d1d1d1;
       text-decoration: none;
     }
     ul.sub-menu{
       li{
         font-size: 90%;
         transition: ease all 0.3s;
+        position: relative;
         &:hover{
-          background: #2777B1;
+          background: #abc937;
           a{
-            color: #e3e3e3;
+            color: #000;
           }
         }
         a{
@@ -214,7 +225,7 @@ a#nav-icon {
 .menu.dropdown{
   ul.sub-menu {
     position: absolute;
-    top: .65rem;
+    top: 1.5rem;
     left: -999em;
     float: left;
     z-index: 99999;
@@ -226,7 +237,12 @@ a#nav-icon {
     visibility: hidden;
     a{
       height: auto;
-      width: 19.5rem;
+      width: 13.5rem;
+      color: #d1d1d1 !important;
+      padding: 1.25rem;
+      &:hover {
+        color: #000 !important;
+      }
     }
     ul{
       left: -999em;
@@ -234,25 +250,18 @@ a#nav-icon {
     }
     li{
       margin: 0;
-      background: #e3e3e3;
+      background: #000;
       width: 100%;
       box-shadow: 4px 4px 5px rgba(0,0,0,.6);
-      border-bottom:1px solid grey;
+      // border-bottom:1px solid grey;
       &:first-child{
-        border-top: 2px solid #ef6f00;
-        //padding-top: .75em;
+        border-top: 2px solid #abc937;
+        // padding-top: .75em;
       }
       &:last-child{
         padding-right: .75em!important;
         border: none;
         //padding-bottom: .75em;
-      }
-      a{
-        padding: .75em;
-        color: #595959;
-        &:hover{
-          color: #ef6f00;
-        }
       }
     }
   }
@@ -269,6 +278,10 @@ a#nav-icon {
     z-index: 1;
     transform: translateY(0%);
     transition-delay: 0s, 0s, 0.3s;
+    // display: inline-flex;
+    li {
+      margin-right: 0 !important;
+    }
 }
 
 .menu-toggle,.menu a {
@@ -337,7 +350,7 @@ a#nav-icon {
           height: 3px;
           width: 35px;
           top: 0;
-          background: #ef6f00;
+          background: #abc937;
           border-radius: 1px;
           cursor: pointer;
           transition: all .5s ease-in-out;

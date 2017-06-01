@@ -21,6 +21,7 @@
         // JavaScript to be fired on all pages
 
         $(document).ready(function() {
+<<<<<<< HEAD
             $(".hero--slider").lightSlider({
                 item: 1,
                 autoWidth: false,
@@ -82,26 +83,54 @@
             });
 
             $( '#my-slider' ).sliderPro({
+=======
+          AOS.init({
+            offset: 200,
+            duration: 600,
+            easing: 'ease-in-sine',
+            delay: 100,
+          });
+
+
+          $( '#my-slider' ).sliderPro({
+>>>>>>> cd9de5b3fe03c4e48e45adcf21185471c4fd20e2
               width: 1920,
               height: $(window).height(),
               autoplay: false,
               loop: false,
               slideAnimationDuration: 1500,
               orientation: 'horizontal',
+<<<<<<< HEAD
               fade: true,
+=======
+              fade: false,
+>>>>>>> cd9de5b3fe03c4e48e45adcf21185471c4fd20e2
               fadeDuration: 1000,
               fadeArrows: true,
               arrows: true,
               buttons: true
+<<<<<<< HEAD
             });
 
             $('#pagepiling').pagepiling({
                 menu: null,
+=======
+          });
+
+
+
+          $('#pagepiling').pagepiling({
+        	    menu: null,
+>>>>>>> cd9de5b3fe03c4e48e45adcf21185471c4fd20e2
                 direction: 'horizontal',
                 verticalCentered: true,
                 sectionsColor: [],
                 anchors: [],
+<<<<<<< HEAD
                 scrollingSpeed: 1000,
+=======
+                scrollingSpeed: 700,
+>>>>>>> cd9de5b3fe03c4e48e45adcf21185471c4fd20e2
                 easing: 'swing',
                 loopBottom: false,
                 loopTop: false,
@@ -109,21 +138,35 @@
                 navigation: {
                     'textColor': '#000',
                     'bulletsColor': '#000',
+<<<<<<< HEAD
                     'position': 'right',
                     'tooltips': ['section1', 'section2', 'section3', 'section4']
                 },
                 normalScrollElements: null,
+=======
+                    'position': 'right'
+                },
+               	normalScrollElements: null,
+>>>>>>> cd9de5b3fe03c4e48e45adcf21185471c4fd20e2
                 normalScrollElementTouchThreshold: 5,
                 touchSensitivity: 5,
                 keyboardScrolling: true,
                 sectionSelector: '.section',
                 animateAnchor: false,
 
+<<<<<<< HEAD
                 //events
                 onLeave: function(index, nextIndex, direction){},
                 afterLoad: function(anchorLink, index){},
                 afterRender: function(){},
             });
+=======
+        		//events
+        		onLeave: function(index, nextIndex, direction){},
+        		afterLoad: function(anchorLink, index){},
+        		afterRender: function(){},
+        	});
+>>>>>>> cd9de5b3fe03c4e48e45adcf21185471c4fd20e2
 
         });
 

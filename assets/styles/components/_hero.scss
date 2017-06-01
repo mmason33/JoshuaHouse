@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .hero--slider {
   padding-top: 80px;
 }
@@ -6,6 +7,44 @@
   font-size: 4rem !important;
 }
 
+=======
+// .hero {
+//   position: fixed;
+//   width: 100%;
+// }
+
+// div.section {
+//   height: 100vh;
+// }
+
+// .hero--slider {
+//   padding-top: 80px;
+// }
+
+.hero--image {
+  height: 600px;
+}
+
+.hero--content {
+  position: relative;
+  top: 300px;
+}
+
+.hero--headline {
+  color: #fff;
+  font-size: 3rem;
+  text-shadow: 0px 5px 15px #000;
+}
+
+.section .hero--content {
+  top: 0;
+}
+
+.slider--headline {
+  font-size: 3rem !important;
+}
+
+>>>>>>> cd9de5b3fe03c4e48e45adcf21185471c4fd20e2
 .sp-buttons {
   padding: 0 !important;
   top: -30px;
@@ -24,3 +63,25 @@
 .sp-grab, .sp-grabbing {
   cursor: default !important;
 }
+<<<<<<< HEAD
+=======
+
+#pp-nav {
+  li {
+    height: 48px;
+  }
+  span {
+    border-radius: 0;
+    height: 50px;
+    width: 10px;
+  }
+}
+
+.sp-horizontal .sp-next-arrow {
+  right: 80px;
+}
+
+.sp-horizontal .sp-previous-arrow {
+  left: 80px;
+}
+>>>>>>> cd9de5b3fe03c4e48e45adcf21185471c4fd20e2
