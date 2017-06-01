@@ -13,10 +13,6 @@
     "slider-pro": "^1.2.2",
     "aos": "^2.1.1",
     "animate.css": "^3.5.2",
-<<<<<<< HEAD
     "pagePiling.js": "https://github.com/alvarotrigo/pagePiling.js.git#^1.5.4"
-=======
-    "pagePiling.js": "pagepiling.js#^1.5.4"
->>>>>>> cd9de5b3fe03c4e48e45adcf21185471c4fd20e2
   }
 }

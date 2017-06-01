@@ -5,17 +5,15 @@ $heroPosition = get_field('hero_position');
 $heroParallax = get_field('hero_parallax');
 $centerContent = (get_field('center_content') == true ? ' text-center' : '' );
 $heroContent = get_field('hero_content');
-<<<<<<< HEAD
-=======
 $pagePile = get_field('page_pile');
->>>>>>> cd9de5b3fe03c4e48e45adcf21185471c4fd20e2
 $sliderPro = get_field('slider_pro');
 $sliderImages = get_field('slider_images');
 $sliderHeadlines = get_field('slider_headlines');
 $sliderExplodeHeadlines = explode(',', $sliderHeadlines);
+
 ?>
-<?php if(!empty($heroImage) && $sliderPro == false): ?>
-<<<<<<< HEAD
+
+<?php if(!empty($heroImage) && $sliderPro == false && $pagePile == false): ?>
 <section class="hero" <?php echo $heroImage; ?>>
   <div class="container">
     <div class="row">
@@ -23,15 +21,13 @@ $sliderExplodeHeadlines = explode(',', $sliderHeadlines);
         <section class="hero--content">
           <?php echo $heroContent; ?>
         </section>
-=======
+      </div>
+    </div>
+  </div>
+</section>
+<?php endif; ?>
   <?php if($pagePile == true): ?>
-    <div class="section" <?php echo $heroImage; ?>>
-  <?php endif; ?>
-  <?php if($pagePile == false): ?>
-    <section class="hero hero--image" <?php echo $heroImage; ?>>
-  <?php else: ?>
-    <section class="hero">
-  <?php endif; ?>
+    <section class="section" <?php echo $heroImage; ?>>
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-12<?php echo $centerContent; ?>">
@@ -42,25 +38,12 @@ $sliderExplodeHeadlines = explode(',', $sliderHeadlines);
             <?php endif; ?>
           </div>
         </div>
->>>>>>> cd9de5b3fe03c4e48e45adcf21185471c4fd20e2
       </div>
     </section>
-  <?php if($pagePile == true): ?>
-    </div>
   <?php endif; ?>
 
-<<<<<<< HEAD
-<?php elseif( $sliderPro == true): ?>
-
-  <section class="hero">
-=======
-<?php elseif($sliderPro == true): ?>
-
-<?php if($pagePile == true): ?>
-  <div class="section">
-<?php endif; ?>
+<?php if($sliderPro == true): ?>
   <section class="hero hero--slider">
->>>>>>> cd9de5b3fe03c4e48e45adcf21185471c4fd20e2
     <div id="my-slider" class="slider-pro">
       <div class="sp-slides">
       <?php $i = 0; ?>
@@ -73,16 +56,7 @@ $sliderExplodeHeadlines = explode(',', $sliderHeadlines);
             </div>
       <?php $i++; ?>
       <?php endforeach; ?>
-
       </div>
     </div>
   </section>
-<<<<<<< HEAD
-<?php else: ?>
-=======
-<?php if($pagePile == true): ?>
-  </div>
-<?php endif; ?>
->>>>>>> cd9de5b3fe03c4e48e45adcf21185471c4fd20e2
-
 <?php endif; ?>

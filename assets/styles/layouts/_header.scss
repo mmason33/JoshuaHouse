@@ -18,13 +18,13 @@
 }
 
 .header {
-<<<<<<< HEAD
+
   background: rgba(255,255,255,0.75); /*rgba(1,33,68,1);*/
   padding: 1.75em .75em;
-=======
+
   background: rgba(0,0,0,0.95); /*rgba(1,33,68,1);*/
   padding: 1.5em .75em;
->>>>>>> cd9de5b3fe03c4e48e45adcf21185471c4fd20e2
+
   outline: none;
   box-align: stretch;
   -moz-align-items: stretch;
@@ -49,13 +49,13 @@
   -o-justify-content: flex-start;
   justify-content: flex-start;
   -ms-flex-pack: start;
-<<<<<<< HEAD
+
   z-index: 6;
   box-shadow: 0px 3px 7px #6b6b6b;
-=======
+
   z-index: 7;
   box-shadow: 0px 3px 7px #000;
->>>>>>> cd9de5b3fe03c4e48e45adcf21185471c4fd20e2
+
   line-height: 1.5em;
   // margin-top: 25px; RETHINKING THE NAV-TOP SECTION - THIS WAS MARGIN FOR PLACEMENT OF #NAV-TOP - SEE HEADER - 3/30
   .nav-wrap{

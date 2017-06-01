@@ -1,4 +1,4 @@
-/* ========================================================================
+/* ==
  * DOM-based Routing
  * Based on http://goo.gl/EUTi53 by Paul Irish
  *
@@ -8,7 +8,7 @@
  * .noConflict()
  * The routing is enclosed within an anonymous function so that you can
  * always reference jQuery with $, even when in .noConflict() mode.
- * ======================================================================== */
+ * == */
 
 (function($) {
 
@@ -21,59 +21,6 @@
         // JavaScript to be fired on all pages
 
         $(document).ready(function() {
-<<<<<<< HEAD
-            $(".hero--slider").lightSlider({
-                item: 1,
-                autoWidth: false,
-                slideMove: 1, // slidemove will be 1 if loop is true
-                slideMargin: 0,
-
-                addClass: '',
-                mode: "slide",
-                useCSS: true,
-                cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
-                easing: 'linear', //'for jquery animation',////
-
-                speed: 1000, //ms'
-                auto: false,
-                pauseOnHover: false,
-                loop: false,
-                slideEndAnimation: true,
-                pause: 2000,
-
-                keyPress: false,
-                controls: true,
-                prevHtml: '',
-                nextHtml: '',
-
-                rtl:false,
-                adaptiveHeight:false,
-
-                vertical:false,
-                verticalHeight:500,
-                vThumbWidth:100,
-
-                thumbItem:10,
-                pager: true,
-                gallery: false,
-                galleryMargin: 5,
-                thumbMargin: 5,
-                currentPagerPosition: 'middle',
-
-                enableTouch:true,
-                enableDrag:true,
-                freeMove:true,
-                swipeThreshold: 40,
-
-                responsive : [],
-
-                onBeforeStart: function (el) {},
-                onSliderLoad: function (el) {},
-                onBeforeSlide: function (el) {},
-                onAfterSlide: function (el) {},
-                onBeforeNextSlide: function (el) {},
-                onBeforePrevSlide: function (el) {}
-            });
 
             AOS.init({
               offset: 200,
@@ -82,91 +29,36 @@
               delay: 100,
             });
 
+
             $( '#my-slider' ).sliderPro({
-=======
-          AOS.init({
-            offset: 200,
-            duration: 600,
-            easing: 'ease-in-sine',
-            delay: 100,
-          });
-
-
-          $( '#my-slider' ).sliderPro({
->>>>>>> cd9de5b3fe03c4e48e45adcf21185471c4fd20e2
-              width: 1920,
-              height: $(window).height(),
-              autoplay: false,
-              loop: false,
-              slideAnimationDuration: 1500,
-              orientation: 'horizontal',
-<<<<<<< HEAD
-              fade: true,
-=======
-              fade: false,
->>>>>>> cd9de5b3fe03c4e48e45adcf21185471c4fd20e2
-              fadeDuration: 1000,
-              fadeArrows: true,
-              arrows: true,
-              buttons: true
-<<<<<<< HEAD
-            });
-
-            $('#pagepiling').pagepiling({
-                menu: null,
-=======
-          });
-
+                width: 1920,
+                height: $(window).height(),
+                autoplay: false,
+                loop: false,
+                slideAnimationDuration: 1500,
+                orientation: 'horizontal',
+                fade: true,
+                fadeDuration: 1000,
+                fadeArrows: true,
+                arrows: true,
+                buttons: true
+              });
 
 
           $('#pagepiling').pagepiling({
         	    menu: null,
->>>>>>> cd9de5b3fe03c4e48e45adcf21185471c4fd20e2
                 direction: 'horizontal',
                 verticalCentered: true,
                 sectionsColor: [],
                 anchors: [],
-<<<<<<< HEAD
                 scrollingSpeed: 1000,
-=======
-                scrollingSpeed: 700,
->>>>>>> cd9de5b3fe03c4e48e45adcf21185471c4fd20e2
                 easing: 'swing',
                 loopBottom: false,
                 loopTop: false,
-                css3: true,
-                navigation: {
-                    'textColor': '#000',
-                    'bulletsColor': '#000',
-<<<<<<< HEAD
-                    'position': 'right',
-                    'tooltips': ['section1', 'section2', 'section3', 'section4']
-                },
-                normalScrollElements: null,
-=======
-                    'position': 'right'
-                },
-               	normalScrollElements: null,
->>>>>>> cd9de5b3fe03c4e48e45adcf21185471c4fd20e2
-                normalScrollElementTouchThreshold: 5,
-                touchSensitivity: 5,
-                keyboardScrolling: true,
-                sectionSelector: '.section',
-                animateAnchor: false,
-
-<<<<<<< HEAD
-                //events
-                onLeave: function(index, nextIndex, direction){},
-                afterLoad: function(anchorLink, index){},
-                afterRender: function(){},
+                css3: true
             });
-=======
-        		//events
-        		onLeave: function(index, nextIndex, direction){},
-        		afterLoad: function(anchorLink, index){},
-        		afterRender: function(){},
-        	});
->>>>>>> cd9de5b3fe03c4e48e45adcf21185471c4fd20e2
+
+
 
         });
 
