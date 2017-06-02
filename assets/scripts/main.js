@@ -22,28 +22,26 @@
 
         $(document).ready(function() {
 
-            AOS.init({
-              offset: 200,
-              duration: 600,
-              easing: 'ease-in-sine',
-              delay: 100,
+          AOS.init({
+            offset: 200,
+            duration: 600,
+            easing: 'ease-in-sine',
+            delay: 100,
+          });
+
+          $( '#my-slider' ).sliderPro({
+              width: 1920,
+              height: $(window).height(),
+              autoplay: false,
+              loop: false,
+              slideAnimationDuration: 1500,
+              orientation: 'horizontal',
+              fade: true,
+              fadeDuration: 1000,
+              fadeArrows: true,
+              arrows: true,
+              buttons: true
             });
-
-
-            $( '#my-slider' ).sliderPro({
-                width: 1920,
-                height: $(window).height(),
-                autoplay: false,
-                loop: false,
-                slideAnimationDuration: 1500,
-                orientation: 'horizontal',
-                fade: true,
-                fadeDuration: 1000,
-                fadeArrows: true,
-                arrows: true,
-                buttons: true
-              });
-
 
           $('#pagepiling').pagepiling({
         	    menu: null,
@@ -57,8 +55,6 @@
                 loopTop: false,
                 css3: true
             });
-
-
 
         });
 
