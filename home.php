@@ -12,7 +12,7 @@
         <img src="/wp-content/uploads/2017/05/j-house-logo-big.png" class="img-fluid">
         <hr>
         <h4>Coming Soon</h4>
-        <a href="tel:8663110003">866.311.0003</a>
+        <h4><a style="color:#abc937;" href="tel:8663110003">866.311.0003</a></h4>
       </div>
     </div>
   </div>
